@@ -56,18 +56,20 @@ p {
   color: black;
   text-decoration: none;
   margin: 20px;
+  font-size: 2rem;
   position: relative;
-  left: 140vh;
+  left: 120vh;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.5s ease;
 }
 .toggle {
   position: relative;
-  left: 156vh;
+  left: 130vh;
 }
 .logo {
   position: absolute;
   left: 4rem;
+  top: -2px;
 }
 
 .home:hover,
@@ -75,4 +77,26 @@ p {
 .my-skills:hover,
 .projects:hover {
   border-bottom: 2px solid black;
+}
+
+.my-name {
+  position: relative;
+  font-size: 4rem;
+  left: 20%;
+  margin-top: 20rem;
+  font-family: "Nova Square", sans-serif;
+}
+.about-me {
+  margin-top: 20%;
+  position: relative;
+  left: 18%;
+  font-size: 2rem;
+}
+.description {
+  position: relative;
+  border: 2px solid black;
+  width: 1000px;
+  font-size: 2rem;
+  height: 400px;
+  left: 20%;
 }
