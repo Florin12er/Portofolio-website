@@ -83,12 +83,12 @@ p {
   position: relative;
   font-size: 4rem;
   left: 20%;
-  width: 1200px;
+  width: 75rem;
   margin-top: 20rem;
   font-family: "Nova Square", sans-serif;
 }
 .about-me {
-  width: 1200px;
+  width: 75rem;
   margin-top: 20%;
   position: relative;
   left: 18%;
@@ -97,19 +97,19 @@ p {
 .description {
   position: relative;
   border: 2px solid black;
-  width: 1000px;
+  width: 62.5rem;
   font-size: 2rem;
-  height: 400px;
+  height: 25rem;
   left: 20%;
 }
 .skill-header {
   position: relative;
   left: 18%;
-  width: 800px;
+  width: 62.5rem;
   font-size: 2rem;
 }
 .skills {
-  width: 1200px;
+  width: 75rem;
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 10rem);
@@ -120,11 +120,72 @@ p {
   border: 2px solid black;
 }
 .copyright {
-  width: 800px;
+  width: 62.5rem;
   position: relative;
   left: 40%;
 }
 .my-photo {
   position: relative;
   left: 40%;
+}
+.my-projects {
+  width: 50rem;
+  height: 30rem;
+  position: relative;
+  left: 30%;
+  border: 2px solid black;
+  margin-top: 100px;
+}
+.project,
+.github,
+.linkedin {
+  position: relative;
+  left: 60%;
+}
+
+.my-contact {
+  position: relative;
+  left: 15%;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 75rem;
+}
+.please-contact {
+  width: 75rem;
+  position: relative;
+  left: 15%;
+}
+form {
+  display: grid;
+  grid-template-columns: 50px 600px;
+  position: relative;
+  left: 40%;
+}
+.logo-linkedin {
+  grid-column: 1;
+}
+.email,
+.send,
+.message,
+.name {
+  margin-left: 20px;
+  grid-column: 2;
+  margin-bottom: 10px;
+  width: 590px;
+  font-size: 1.2rem;
+}
+.name {
+  grid-row: 1;
+}
+.email,
+.name {
+  height: 30px;
+}
+.message {
+  height: 90px;
+  resize: none;
+}
+.send {
+  width: 100px;
+  height: 30px;
 }
