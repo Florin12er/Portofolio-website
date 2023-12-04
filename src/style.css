@@ -4,7 +4,7 @@ nav {
   display: flex;
 }
 
-.home,
+.contacts,
 .about,
 .my-skills,
 .projects,
@@ -27,6 +27,7 @@ form {
   position: relative;
 }
 .toggle {
+  margin-top: 10px;
   display: inline-block;
   width: 100px;
   height: 52px;
@@ -35,7 +36,6 @@ form {
   border-radius: 30px;
   border: 2px solid gray;
 }
-
 .toggle:after {
   content: "";
   position: absolute;
@@ -70,10 +70,10 @@ p {
   display: none;
 }
 
-.home,
 .about,
 .my-skills,
-.projects {
+.projects,
+.contacts {
   color: black;
   text-decoration: none;
   margin: 20px;
@@ -82,11 +82,12 @@ p {
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.5s ease;
 }
-
 .toggle {
+  cursor: pointer;
   left: 130vh;
 }
 .logo {
+  cursor: pointer;
   position: absolute;
   left: 4rem;
   top: -2px;
@@ -95,22 +96,24 @@ p {
 .home:hover,
 .about:hover,
 .my-skills:hover,
-.projects:hover {
+.projects:hover,
+.contacts:hover {
   border-bottom: 2px solid black;
 }
 
 .my-name {
   font-size: 4rem;
   left: 20%;
-  width: 75rem;
+  width: 70rem;
   margin-top: 20rem;
   font-family: "Nova Square", sans-serif;
+  margin-bottom: 25rem;
 }
 .about-me {
-  width: 75rem;
+  width: 40rem;
   margin-top: 20%;
   left: 18%;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .description {
   border: 2px solid black;
@@ -118,18 +121,20 @@ p {
   font-size: 2rem;
   height: 25rem;
   left: 20%;
+  margin-bottom: 23rem;
 }
 .skill-header {
-  left: 18%;
+  left: 25%;
   width: 62.5rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .skills {
-  width: 75rem;
+  margin-bottom: 20rem;
+  width: 40rem;
   display: grid;
   grid-template-columns: repeat(3, 10rem);
   grid-template-rows: repeat(3, 10rem);
-  left: 30%;
+  left: 40%;
 }
 .specific-skill {
   border: 2px solid black;
@@ -146,14 +151,19 @@ p {
   height: 30rem;
   left: 30%;
   border: 2px solid black;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .project,
 .github,
 .linkedin {
   left: 60%;
 }
-
+.my-project-header {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  width: 114rem;
+}
 .my-contact {
   left: 15%;
   font-size: 2rem;
@@ -163,9 +173,11 @@ p {
 }
 .please-contact {
   width: 75rem;
+  margin-bottom: 3rem;
   left: 15%;
 }
 form {
+  width: 40rem;
   display: grid;
   grid-template-columns: 50px 600px;
   left: 40%;
@@ -210,4 +222,14 @@ form {
 svg {
   width: 50px;
   height: 50px;
+}
+.rskill {
+  margin-left: 17px;
+  margin-top: 17px;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+footer {
+  margin-top: 20rem;
 }
