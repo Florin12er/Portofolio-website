@@ -1,9 +1,39 @@
 @import "reset.css";
 
-nav {
-  display: flex;
+:root {
+  --body-color: #121211;
+  --blue-color: #3498db;
+  --nav-color: #333333;
+  --footer-color: #555555;
+  --text-color: #ffffff;
+  transition: var(--transition-duration, all 1s);
 }
 
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+nav {
+  display: flex;
+  width: 120rem;
+  background-color: var(--nav-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--body-color);
+}
 .contacts,
 .about,
 .my-skills,
@@ -31,10 +61,10 @@ form {
   display: inline-block;
   width: 100px;
   height: 52px;
-  background-color: #e5e7eb;
-  color: black;
+  background-color: var(--text-color);
+  color: var(--body-color);
   border-radius: 30px;
-  border: 2px solid gray;
+  border: 2px solid var(--nav-color);
 }
 .toggle:after {
   content: "";
@@ -42,7 +72,7 @@ form {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: var(--nav-color);
   top: 1px;
   left: 1px;
   transition: all 0.5s;
@@ -62,8 +92,8 @@ p {
 }
 
 .checkbox:checked + .toggle {
-  color: white;
-  background-color: #262626;
+  color: var(--text-color);
+  background-color: var(--body-color);
 }
 
 .checkbox {
@@ -74,7 +104,6 @@ p {
 .my-skills,
 .projects,
 .contacts {
-  color: black;
   text-decoration: none;
   margin: 20px;
   font-size: 2rem;
@@ -90,7 +119,7 @@ p {
   cursor: pointer;
   position: absolute;
   left: 4rem;
-  top: -2px;
+  top: 5px;
 }
 
 .home:hover,
@@ -98,7 +127,7 @@ p {
 .my-skills:hover,
 .projects:hover,
 .contacts:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--body-color);
 }
 
 .my-name {
@@ -110,34 +139,34 @@ p {
   margin-bottom: 25rem;
 }
 .about-me {
+  font-weight: bold;
   width: 40rem;
-  margin-top: 20%;
+  margin-top: 30rem;
   left: 18%;
   font-size: 3rem;
 }
 .description {
-  border: 2px solid black;
   width: 62.5rem;
   font-size: 2rem;
   height: 25rem;
   left: 20%;
-  margin-bottom: 23rem;
+  margin-bottom: 30rem;
 }
 .skill-header {
-  left: 25%;
+  left: 15%;
   width: 62.5rem;
   font-size: 3rem;
 }
 .skills {
-  margin-bottom: 20rem;
+  margin-bottom: 30rem;
   width: 40rem;
   display: grid;
-  grid-template-columns: repeat(3, 10rem);
+  grid-template-columns: repeat(4, 10rem);
   grid-template-rows: repeat(3, 10rem);
-  left: 40%;
+  left: 30%;
 }
 .specific-skill {
-  border: 2px solid black;
+  border: 2px solid var(--text-color);
 }
 .copyright {
   width: 62.5rem;
@@ -149,9 +178,17 @@ p {
 .my-projects {
   width: 50rem;
   height: 30rem;
-  left: 30%;
-  border: 2px solid black;
-  margin-top: 60px;
+  left: 25%;
+  border: 2px solid var(--text-color);
+  margin-top: 30rem;
+}
+#my-project-header {
+  position: relative;
+  bottom: 100px;
+}
+#skill-header {
+  position: relative;
+  bottom: 100px;
 }
 .project,
 .github,
@@ -159,14 +196,14 @@ p {
   left: 60%;
 }
 .my-project-header {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  left: 40%;
   font-size: 3rem;
   width: 114rem;
 }
 .my-contact {
   left: 15%;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   width: 75rem;
   margin-bottom: 0;
@@ -175,6 +212,9 @@ p {
   width: 75rem;
   margin-bottom: 3rem;
   left: 15%;
+}
+.one {
+  margin-top: 2rem;
 }
 form {
   width: 40rem;
@@ -212,11 +252,10 @@ form {
 }
 .send {
   width: 100px;
-  height: 30px;
+  height: 40px;
   border: none;
   cursor: pointer;
   font-size: 2rem;
-  right: 20px;
   font-weight: inherit;
 }
 svg {
@@ -231,5 +270,50 @@ svg {
   cursor: pointer;
 }
 footer {
-  margin-top: 20rem;
+  position: relative;
+  top: 17px;
+  background-color: var(--footer-color);
+  color: var(--text-color);
+  margin-top: 30rem;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduces-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.github-svg {
+  fill: var(--text-color);
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+}
+.github-svg:hover {
+  fill: var(--blue-color);
+  border-color: var(--blue-color);
+}
+.next-js-svg {
+  margin-top: 17px;
+  width: 120px;
+  height: 120px;
+  fill: var(--text-color);
+}
+.twitter-svg:hover {
+  fill: var(--text-color);
+}
+.twitter-svg {
+  fill: var(--blue-color);
 }
