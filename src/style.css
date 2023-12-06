@@ -15,7 +15,7 @@ body {
 }
 nav {
   display: flex;
-  width: 120rem;
+  width: 100%;
   background-color: var(--nav-color);
   position: fixed;
   top: 0;
