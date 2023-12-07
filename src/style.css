@@ -176,9 +176,9 @@ p {
   left: 40%;
 }
 .my-projects {
-  width: 50rem;
-  height: 30rem;
-  left: 25%;
+  width: 80rem;
+  height: 32rem;
+  left: 15%;
   border: 2px solid var(--text-color);
   margin-top: 30rem;
 }
@@ -197,9 +197,9 @@ p {
 }
 .my-project-header {
   position: relative;
-  left: 40%;
+  left: 35%;
   font-size: 3rem;
-  width: 114rem;
+  width: 40rem;
 }
 .my-contact {
   left: 15%;
@@ -207,6 +207,10 @@ p {
   font-weight: bold;
   width: 75rem;
   margin-bottom: 0;
+}
+.move {
+  position: relative;
+  top: 450px;
 }
 .please-contact {
   width: 75rem;
