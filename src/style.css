@@ -10,6 +10,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: var(--body-color);
   color: var(--text-color);
 }
@@ -133,14 +134,12 @@ p {
 .my-name {
   font-size: 4rem;
   left: 20%;
-  width: 70rem;
   margin-top: 20rem;
   font-family: "Nova Square", sans-serif;
   margin-bottom: 25rem;
 }
 .about-me {
   font-weight: bold;
-  width: 40rem;
   margin-top: 30rem;
   left: 18%;
   font-size: 3rem;
@@ -154,12 +153,10 @@ p {
 }
 .skill-header {
   left: 15%;
-  width: 62.5rem;
   font-size: 3rem;
 }
 .skills {
   margin-bottom: 30rem;
-  width: 40rem;
   display: grid;
   grid-template-columns: repeat(4, 10rem);
   grid-template-rows: repeat(3, 10rem);
@@ -169,18 +166,17 @@ p {
   border: 2px solid var(--text-color);
 }
 .copyright {
-  width: 62.5rem;
   left: 40%;
 }
 .my-photo {
   left: 40%;
 }
 .my-projects {
-  width: 80rem;
   height: 32rem;
   left: 15%;
   border: 2px solid var(--text-color);
   margin-top: 30rem;
+  width: 70rem;
 }
 #my-project-header {
   position: relative;
@@ -199,13 +195,11 @@ p {
   position: relative;
   left: 35%;
   font-size: 3rem;
-  width: 40rem;
 }
 .my-contact {
   left: 15%;
   font-size: 2.5rem;
   font-weight: bold;
-  width: 75rem;
   margin-bottom: 0;
 }
 .move {
@@ -213,15 +207,14 @@ p {
   top: 450px;
 }
 .please-contact {
-  width: 75rem;
   margin-bottom: 3rem;
+  width: 62.5rem;
   left: 15%;
 }
 .one {
   margin-top: 2rem;
 }
 form {
-  width: 40rem;
   display: grid;
   grid-template-columns: 50px 600px;
   left: 40%;
@@ -234,10 +227,9 @@ form {
 .send,
 .message,
 .name {
-  margin-left: 20px;
+  margin-left: 1.25rem;
   grid-column: 2;
   margin-bottom: 10px;
-  width: 590px;
   font-size: 1.2rem;
 }
 .name {
@@ -245,7 +237,7 @@ form {
 }
 .email,
 .name {
-  height: 30px;
+  height: 1.875rem;
 }
 .message {
   height: 90px;
