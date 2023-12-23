@@ -313,13 +313,47 @@ footer {
 .twitter-svg {
   fill: var(--blue-color);
 }
-
+.menu {
+  position: fixed;
+  cursor: pointer;
+  display: none;
+  left: 22.5rem;
+  top: 3px;
+  width: 65px;
+  height: 65px;
+}
 @media (max-width: 844px) {
+  footer {
+    overflow-x: hidden;
+  }
+  .menu {
+    display: block;
+  }
+  .logo {
+    left: 0.625rem;
+  }
+  header {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  nav {
+    overflow-x: hidden;
+    max-width: 100%;
+    height: 70px;
+  }
+  .contacts,
+  .projects,
+  .my-skills,
+  .about,
+  .toggle {
+    display: none;
+  }
   .contact {
-    width: 100%;
+    max-width: 100%;
   }
   body {
     overflow-x: hidden;
+    max-width: 100%;
   }
   .my-contact {
     left: 0;
@@ -344,6 +378,7 @@ footer {
     max-height: 40px;
   }
   form {
+    overflow-x: hidden;
     left: 0%;
   }
   .logo-linkedin {
@@ -421,6 +456,7 @@ footer {
     left: 40px;
     grid-template-columns: repeat(4, 5rem);
     grid-template-rows: repeat(3, 5rem);
+    width: 300px;
   }
   .specific-skill {
     width: 80px;
@@ -445,5 +481,9 @@ footer {
   .my-projects {
     width: 300px;
     left: 50px;
+  }
+  .skill-header,
+  .my-project-header {
+    width: 300px;
   }
 }
