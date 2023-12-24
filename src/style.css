@@ -314,7 +314,7 @@ footer {
   fill: var(--blue-color);
 }
 .menu {
-  position: fixed;
+  position: absolute;
   cursor: pointer;
   display: none;
   left: 22.5rem;
@@ -322,9 +322,64 @@ footer {
   width: 65px;
   height: 65px;
 }
+.contact-mobile {
+  text-decoration: none;
+  top: 190px;
+}
+.contact-mobile,
+.about-mobile {
+  position: relative;
+  display: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s ease;
+  font-size: 1.5rem;
+  height: 24px;
+  left: 170px;
+}
+.about-mobile {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s ease;
+  left: 90px;
+  top: 150px;
+}
+.my-skills-mobile {
+  display: none;
+  text-decoration: none;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s ease;
+  height: 24px;
+  top: 110px;
+  font-size: 1.5rem;
+}
+.projects-mobile {
+  display: none;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s ease;
+  position: relative;
+  height: 24px;
+  top: 70px;
+  font-size: 1.5rem;
+  right: 90px;
+}
+.projects-mobile:hover,
+.my-skills-mobile:hover,
+.about-mobile:hover,
+.contact-mobile:hover {
+  border-bottom: 0px solid var(--body-color);
+}
+
 @media (max-width: 844px) {
   footer {
     overflow-x: hidden;
+  }
+  .contact-mobile,
+  .about-mobile,
+  .my-skills-mobile,
+  .projects-mobile {
+    display: block;
   }
   .menu {
     display: block;
@@ -344,9 +399,13 @@ footer {
   .contacts,
   .projects,
   .my-skills,
-  .about,
-  .toggle {
+  .about {
     display: none;
+  }
+  .toggle {
+    position: absolute;
+    top: 180px;
+    margin-left: 330px;
   }
   .contact {
     max-width: 100%;
@@ -424,27 +483,25 @@ footer {
     margin-left: 5px;
     font-size: 1rem;
     left: 0;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.5s ease;
   }
   .toggle {
     left: 0;
   }
   .toggle {
-    width: 50px;
-    max-height: 26.5px;
+    width: 90px;
+    max-height: 46.5px;
   }
   .checkbox:checked + .toggle::after {
-    left: 25px;
+    left: 45px;
   }
 
   .toggle::after {
-    width: 25px;
-    height: 25px;
+    width: 45px;
+    height: 45px;
   }
   .black-white {
-    font-size: 0.5rem;
-    margin-left: 0.063rem;
+    font-size: 0.9rem;
+    margin-left: 3px;
   }
   .description {
     font-size: 1.5rem;
