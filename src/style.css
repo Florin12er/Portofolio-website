@@ -14,7 +14,13 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
 }
+
+header {
+  z-index: -1;
+}
+
 nav {
+  z-index: 1;
   display: flex;
   width: 100%;
   background-color: var(--nav-color);
@@ -22,6 +28,7 @@ nav {
   top: 0;
   left: 0;
 }
+
 h1,
 h2,
 h3 {
@@ -35,6 +42,7 @@ a {
 a:hover {
   color: var(--body-color);
 }
+
 .contacts,
 .about,
 .my-skills,
@@ -57,6 +65,7 @@ a:hover {
 form {
   position: relative;
 }
+
 .about,
 .my-skills,
 .projects,
@@ -68,20 +77,20 @@ form {
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.5s ease;
 }
+
 .toggle {
   cursor: pointer;
-  left: 130vh;
-}
-.toggle {
   margin-top: 10px;
   display: inline-block;
   width: 100px;
+  left: 120vh;
   height: 52px;
   background-color: var(--text-color);
   color: var(--body-color);
   border-radius: 30px;
   border: 2px solid var(--nav-color);
 }
+
 .toggle::after {
   content: "";
   position: absolute;
@@ -97,6 +106,7 @@ form {
 p {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .black-white {
   font-size: 1rem;
   font-weight: bold;
@@ -115,6 +125,7 @@ p {
 .checkbox {
   display: none;
 }
+
 .logo {
   cursor: pointer;
   position: absolute;
@@ -137,24 +148,27 @@ p {
   font-family: "Nova Square", sans-serif;
   margin-bottom: 25rem;
 }
+
 .about-me {
   font-weight: bold;
   margin-top: 30rem;
   left: 18%;
   font-size: 3rem;
 }
+
 .description {
-  max-width: 62.5rem;
-  min-width: 20rem;
+  width: 62.5rem;
+  min-width: 15rem;
   font-size: clamp(1rem, 2rem, 2rem);
-  max-height: 25rem;
   left: 20%;
   margin-bottom: 30rem;
 }
+
 .skill-header {
   left: 15%;
   font-size: 3rem;
 }
+
 .skills {
   margin-bottom: 30rem;
   display: grid;
@@ -162,15 +176,19 @@ p {
   grid-template-rows: repeat(3, 10rem);
   left: 30%;
 }
+
 .specific-skill {
   border: 2px solid var(--text-color);
 }
+
 .copyright {
   left: 40%;
 }
+
 .my-photo {
   left: 40%;
 }
+
 .my-projects {
   height: 32rem;
   left: 15%;
@@ -178,51 +196,63 @@ p {
   margin-top: 30rem;
   max-width: 70rem;
 }
+
 #my-project-header {
   position: relative;
   bottom: 100px;
 }
+
 #skill-header {
   position: relative;
   bottom: 100px;
 }
+
 .project,
 .github,
 .linkedin {
   left: 60%;
 }
+
 .my-project-header {
   position: relative;
   left: 35%;
   font-size: 3rem;
 }
+
 .my-contact {
   left: 15%;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 0;
 }
+
 .move {
   position: relative;
   top: 450px;
 }
+
 .please-contact {
   margin-bottom: 3rem;
   max-width: 62.5rem;
   left: 15%;
 }
+
 .one {
   margin-top: 2rem;
 }
+
 form {
+  z-index: -1;
   display: grid;
   grid-template-columns: 50px 600px;
   left: 40%;
 }
+
 .logo-linkedin,
 .logo-twitter {
   grid-column: 1;
 }
+
 .email,
 .send,
 .message,
@@ -232,20 +262,25 @@ form {
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
+
 .name {
   grid-row: 1;
 }
+
 .email,
 .name {
   max-height: 1.875rem;
 }
+
 .message {
   max-height: 90px;
   resize: none;
 }
+
 .email {
   grid-row: 2;
 }
+
 .send {
   max-width: 100px;
   max-height: 40px;
@@ -254,10 +289,12 @@ form {
   font-size: 2rem;
   font-weight: inherit;
 }
+
 svg {
   max-width: 50px;
   max-height: 50px;
 }
+
 .rskill {
   margin-left: 17px;
   margin-top: 17px;
@@ -265,12 +302,15 @@ svg {
   max-height: 120px;
   cursor: pointer;
 }
+
 footer {
+  z-index: -1;
   position: relative;
   top: 17px;
   background-color: var(--footer-color);
   color: var(--text-color);
   margin-top: 30rem;
+  width: 100%;
 }
 
 .hidden {
@@ -297,35 +337,43 @@ footer {
   border: 1px solid var(--text-color);
   border-radius: 5px;
 }
+
 .github-svg:hover {
   fill: var(--blue-color);
   border-color: var(--blue-color);
 }
+
 .next-js-svg {
   margin-top: 17px;
   max-width: 120px;
   max-height: 120px;
   fill: var(--text-color);
 }
+
 .twitter-svg:hover {
   fill: var(--text-color);
 }
+
 .twitter-svg {
   fill: var(--blue-color);
 }
+
+/* phone version */
 .menu {
   position: absolute;
   cursor: pointer;
   display: none;
-  left: 22.5rem;
+  left: 21.5rem;
   top: 3px;
   width: 65px;
   height: 65px;
 }
+
 .contact-mobile {
   text-decoration: none;
   top: 190px;
 }
+
 .contact-mobile,
 .about-mobile {
   position: relative;
@@ -336,6 +384,7 @@ footer {
   height: 24px;
   left: 170px;
 }
+
 .about-mobile {
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -343,6 +392,7 @@ footer {
   left: 90px;
   top: 150px;
 }
+
 .my-skills-mobile {
   display: none;
   text-decoration: none;
@@ -353,6 +403,7 @@ footer {
   top: 110px;
   font-size: 1.5rem;
 }
+
 .projects-mobile {
   display: none;
   text-decoration: none;
@@ -364,6 +415,7 @@ footer {
   font-size: 1.5rem;
   right: 90px;
 }
+
 .projects-mobile:hover,
 .my-skills-mobile:hover,
 .about-mobile:hover,
@@ -375,106 +427,136 @@ footer {
   footer {
     overflow-x: hidden;
   }
+
   .contact-mobile,
   .about-mobile,
   .my-skills-mobile,
   .projects-mobile {
     display: block;
   }
+
   .menu {
     display: block;
   }
+
   .logo {
     left: 0.625rem;
   }
+
   header {
     overflow-x: hidden;
     max-width: 100%;
   }
+
   nav {
-    overflow-x: hidden;
+    overflow: hidden;
     max-width: 100%;
     height: 70px;
   }
+
   .contacts,
   .projects,
   .my-skills,
   .about {
     display: none;
   }
+
   .toggle {
     position: absolute;
     top: 180px;
     margin-left: 330px;
   }
+
   .contact {
     max-width: 100%;
   }
+
   body {
     overflow-x: hidden;
     max-width: 100%;
   }
+
   .my-contact {
     left: 0;
   }
+
   .please-contact {
     left: 2.5rem;
     max-width: 20rem;
   }
+
   .copyright {
     left: 20%;
   }
+
   .github-svg {
     max-width: 40px;
     max-height: 40px;
   }
+
   .linkedin-svg {
     max-width: 40px;
     max-height: 40px;
   }
+
   .twitter-svg {
     max-width: 40px;
     max-height: 40px;
   }
+
   form {
     overflow-x: hidden;
     left: 0%;
   }
+
   .logo-linkedin {
     grid-column: 2;
   }
+
   .logo-twitter {
     margin-left: 40px;
     grid-column: 2;
   }
+
   .logo-github {
     margin-left: 80px;
     grid-column: 2;
   }
+
   .logo-github,
   .logo-twitter,
   .logo-linkedin {
+    position: relative;
     grid-row: 1;
   }
+
   .name {
     grid-row: 2;
   }
+
+  .email {
+    grid-row: 3;
+  }
+
   .email,
   .message,
   .send,
   .name {
     margin-left: 0;
   }
+
   .email,
   .message,
   .message,
   .name {
     max-width: 330px;
   }
+
   .my-name {
     font-size: 2rem;
     left: 0;
   }
+
   .about,
   .my-skills,
   .projects,
@@ -484,13 +566,16 @@ footer {
     font-size: 1rem;
     left: 0;
   }
+
   .toggle {
     left: 0;
   }
+
   .toggle {
     width: 90px;
     max-height: 46.5px;
   }
+
   .checkbox:checked + .toggle::after {
     left: 45px;
   }
@@ -499,15 +584,18 @@ footer {
     width: 45px;
     height: 45px;
   }
+
   .black-white {
     font-size: 0.9rem;
     margin-left: 3px;
   }
+
   .description {
     font-size: 1.5rem;
     width: 300px;
     left: 40px;
   }
+
   .skills {
     margin-top: 20px;
     left: 40px;
@@ -515,10 +603,12 @@ footer {
     grid-template-rows: repeat(3, 5rem);
     width: 300px;
   }
+
   .specific-skill {
     width: 80px;
     max-height: 80px;
   }
+
   .rskill {
     position: relative;
     top: 10px;
@@ -527,20 +617,249 @@ footer {
     max-height: 60px;
     margin: 0;
   }
+
   .next-js-svg {
     position: relative;
     margin: 0;
     max-width: 70px;
   }
+
   .my-project-header {
     left: 5px;
   }
+
   .my-projects {
     width: 300px;
     left: 50px;
   }
+
   .skill-header,
   .my-project-header {
     width: 300px;
   }
 }
+
+@media (max-width: 412px) {
+  .menu {
+    left: 22rem;
+  }
+
+  .toggle {
+    margin-left: 310px;
+  }
+}
+@media (max-width: 390px) {
+  .email,
+  .name,
+  .message {
+    width: 280px;
+  }
+  .please-contact {
+    left: 2.3rem;
+  }
+  .menu {
+    left: 20rem;
+  }
+  .toggle {
+    margin-left: 260px;
+  }
+  .contact-mobile,
+  .about-mobile,
+  .my-skills-mobile,
+  .projects-mobile {
+    font-size: 1.2rem;
+  }
+  .projects-mobile {
+    right: 4rem;
+  }
+  .my-skills-mobile {
+    left: 0.5rem;
+  }
+  .about-mobile {
+    left: 5rem;
+  }
+  .contact-mobile {
+    left: 9rem;
+  }
+  .my-projects,
+  .skills,
+  .skill-header,
+  .about-me,
+  .description,
+  .my-name,
+  .my-project-header,
+  .my-contact,
+  .please-contact {
+    left: 1rem;
+  }
+}
+@media (max-width: 360px) {
+  .email,
+  .name,
+  .message {
+    width: 280px;
+  }
+  .please-contact {
+    left: 2.3rem;
+  }
+  .menu {
+    left: 18rem;
+  }
+  .toggle {
+    margin-left: 260px;
+  }
+  .contact-mobile,
+  .about-mobile,
+  .my-skills-mobile,
+  .projects-mobile {
+    font-size: 1.2rem;
+  }
+  .projects-mobile {
+    right: 4rem;
+  }
+  .my-skills-mobile {
+    left: 0.5rem;
+  }
+  .about-mobile {
+    left: 5rem;
+  }
+  .contact-mobile {
+    left: 9rem;
+  }
+  .my-projects,
+  .skills,
+  .skill-header,
+  .about-me,
+  .description,
+  .my-name,
+  .my-project-header,
+  .my-contact,
+  .please-contact {
+    left: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .menu {
+    left: 19rem;
+  }
+}
+@media (max-width: 320px) {
+  .my-projects,
+  .skills,
+  .skill-header,
+  .about-me,
+  .description,
+  .my-name,
+  .my-project-header,
+  .my-contact,
+  .please-contact {
+    left: 0rem;
+  }
+  .specific-skill,
+  .rskill {
+    width: 70px;
+  }
+  .rskill {
+    left: 0.2rem;
+  }
+  .next-js-svg {
+    left: 0rem;
+    width: 65px;
+  }
+  .email,
+  .name,
+  .message {
+    width: 250px;
+  }
+  .menu {
+    left: 16rem;
+  }
+  .toggle {
+    margin-left: 220px;
+  }
+  .copyright {
+    left: 2.5rem;
+  }
+}
+@media (max-width: 280px) {
+  .my-projects,
+  .skills,
+  .skill-header,
+  .about-me,
+  .description,
+  .my-name,
+  .my-project-header,
+  .my-contact,
+  .please-contact {
+    left: 0rem;
+  }
+  .specific-skill,
+  .rskill {
+    width: 70px;
+  }
+  .rskill {
+    left: 0.2rem;
+  }
+  .next-js-svg {
+    left: 0rem;
+    width: 65px;
+  }
+  .email,
+  .name,
+  .message {
+    width: 220px;
+  }
+  .menu {
+    left: 13.5rem;
+  }
+  .toggle {
+    margin-left: 220px;
+  }
+  .copyright {
+    left: 1rem;
+  }
+  .about-project {
+    font-size: 1rem;
+  }
+  .my-projects {
+    width: 250px;
+  }
+  .skills {
+    display: grid;
+    grid-template-rows: repeat(3, 5rem);
+    grid-template-columns: repeat(3, 5rem);
+    left: 1rem;
+  }
+  .description {
+    width: 100px;
+    font-size: 1rem;
+  }
+  .contact-mobile,
+  .about-mobile,
+  .my-skills-mobile,
+  .projects-mobile {
+    font-size: 1rem;
+  }
+  .projects-mobile {
+    right: 4rem;
+  }
+  .my-skills-mobile {
+    left: 0.3rem;
+  }
+  .about-mobile {
+    left: 4rem;
+  }
+  .contact-mobile {
+    left: 7rem;
+  }
+  .toggle {
+    margin-left: 180px;
+  }
+}
+/* tablet version */
+
+/* laptop version */
+
+/* 4k version */
+
+/* 1080p version */
