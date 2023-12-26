@@ -2,6 +2,9 @@ const hiddenElements = document.querySelectorAll(".hidden");
 const toggle = document.getElementById("switch");
 const menuImage = document.getElementById("menu");
 const nav = document.querySelector("nav");
+const myProjectMobile = document.getElementById("projects-mobile");
+myProjectMobile.style.display = "none";
+
 nav.style.height = "70px";
 const header = document.querySelector("header");
 const footer = document.querySelector("footer");
@@ -45,10 +48,12 @@ menuImage.addEventListener("click", () => {
     header.style.opacity = "0.2";
     menuImage.src = closeMenu;
     nav.style.height = "250px";
+    myProjectMobile.style.display = "block";
   } else {
     header.style.opacity = "1";
     footer.style.opacity = "1";
     menuImage.src = menu;
+    myProjectMobile.style.display = "none";
     nav.style.height = "70px";
   }
 });
