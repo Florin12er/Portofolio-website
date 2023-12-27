@@ -71,3 +71,31 @@ function updateStyles() {
   }
 }
 window.addEventListener("resize", updateStyles);
+function sendEmail() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+  const emailParams = {
+    name: name,
+    email: email,
+    message: message,
+  };
+  if (!name || !email || !message) {
+    alert("Please fill out all required fields: Name, Email, and Message");
+    return;
+  }
+  const serviceID = "service_ociqo3b";
+  const templeteID = "template_65k98eo";
+  emailjs
+    .send(serviceID, templeteID, emailParams)
+    .then((response) => {
+      name;
+      email;
+      message;
+      console.log(response);
+      alert("your email has been sent successfully");
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}

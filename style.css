@@ -272,11 +272,11 @@ form {
 
 .email,
 .name {
-  max-height: 1.875rem;
+  height: 1.875rem;
 }
 
 .message {
-  max-height: 90px;
+  height: 90px;
   resize: none;
 }
 
@@ -285,8 +285,8 @@ form {
 }
 
 .send {
-  max-width: 100px;
-  max-height: 40px;
+  width: 100px;
+  height: 40px;
   border: none;
   cursor: pointer;
   font-size: 2rem;
@@ -443,18 +443,6 @@ header {
     left: 40rem;
   }
 }
-@media (max-width: 1920px) {
-  .about,
-  .my-skills,
-  .projects,
-  .contacts,
-  .toggle {
-    left: 120vh;
-  }
-  .my-name {
-    left: 40rem;
-  }
-}
 @media (max-width: 1440px) {
   .about,
   .my-skills,
@@ -465,6 +453,18 @@ header {
   }
   .my-projects {
     left: 10rem;
+  }
+}
+@media (max-width: 1920px) {
+  .about,
+  .my-skills,
+  .projects,
+  .contacts,
+  .toggle {
+    left: 120vh;
+  }
+  .my-name {
+    left: 20rem;
   }
 }
 @media (max-width: 1024px) {

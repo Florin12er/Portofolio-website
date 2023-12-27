@@ -160,16 +160,24 @@
                   </svg>
                </a>
                <label for="name"></label>
-               <input type="text" id="name" class="name" placeholder="Name" autocomplete="name">
+               <input type="text" id="name" class="name" placeholder="Name" autocomplete="name" required>
                <label for="email"></label>
-               <input type="text" class="email" placeholder="email" id="email" autocomplete="email">
+               <input type="text" class="email" placeholder="email" id="email" autocomplete="email" required>
                <label for= "message"></label>
-               <textarea type="text" class="message" placeholder="Message" id="message" autocomplete="message"></textarea>
-               <button class="send" type="submit">send</button>
+               <textarea type="text" class="message" placeholder="Message" id="message" autocomplete="message" required></textarea>
+               <button class="send" type="submit"  onclick="sendEmail()">send</button>
             </form>
             <p class="copyright">© Copyright 2023, Florin Sebastian</p>
          </div>
       </footer>
       <script src="animation.js"></script>
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+      </script>
+    <script type="text/javascript">
+       (function(){
+      emailjs.init("7ZHgA1acZtrhvTZ8K");
+        })();
+    </script>
    </body>
 </html>
