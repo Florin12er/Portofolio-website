@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  z-index: -1;
+  z-index: 0;
 }
 
 nav {
@@ -64,6 +64,9 @@ a:hover {
 .send,
 form {
   position: relative;
+}
+label {
+  display: none;
 }
 
 .about,
@@ -242,7 +245,7 @@ p {
 }
 
 form {
-  z-index: -1;
+  z-index: 0;
   display: grid;
   grid-template-columns: 50px 600px;
   left: 40%;
@@ -304,7 +307,7 @@ svg {
 }
 
 footer {
-  z-index: -1;
+  z-index: 0;
   position: relative;
   top: 17px;
   background-color: var(--footer-color);
@@ -423,7 +426,47 @@ footer {
 .contact-mobile:hover {
   border-bottom: 0px solid var(--body-color);
 }
-
+footer,
+nav,
+header {
+  overflow-x: hidden;
+}
+@media (max-width: 2560px) {
+  .about,
+  .my-skills,
+  .projects,
+  .contacts,
+  .toggle {
+    left: 140vh;
+  }
+  .my-name {
+    left: 40rem;
+  }
+}
+@media (max-width: 1920px) {
+  .about,
+  .my-skills,
+  .projects,
+  .contacts,
+  .toggle {
+    left: 120vh;
+  }
+  .my-name {
+    left: 40rem;
+  }
+}
+@media (max-width: 1440px) {
+  .about,
+  .my-skills,
+  .projects,
+  .contacts,
+  .toggle {
+    left: 60vh;
+  }
+  .my-projects {
+    left: 10rem;
+  }
+}
 @media (max-width: 1024px) {
   footer {
     overflow-x: hidden;
@@ -640,32 +683,28 @@ footer {
   }
 }
 
-/* laptop version */
-
-/* 4k version */
-
-/* 1080p version */
-/* tablet version */
-@media (max-width: 932px) {
+@media (max-width: 1024px) {
   .menu {
-    left: 44rem;
+    left: 60rem;
   }
   .my-name {
-    left: 6rem;
+    left: 16rem;
   }
   .copyright {
-    left: 16rem;
+    left: 25rem;
   }
   .about-me,
   .skill-header,
-  .my-project-header,
   .my-contact {
     left: 1rem;
+  }
+  .my-project-header {
+    left: 25rem;
   }
   .please-contact {
     height: 162px;
     font-size: 1.5rem;
-    width: 37.5rem;
+    width: 57.5rem;
   }
   .name,
   .email,
@@ -678,7 +717,7 @@ footer {
   .description,
   .skills,
   .my-projects {
-    width: 37.25rem;
+    width: 57.25rem;
     left: 4rem;
   }
   .specific-skill,
@@ -693,6 +732,7 @@ footer {
     display: grid;
     grid-template-rows: repeat(3, 5rem);
     grid-template-columns: repeat(4, 8rem);
+    left: 15rem;
   }
   .projects-mobile,
   .my-skills-mobile,
@@ -701,6 +741,26 @@ footer {
     font-size: 2.5rem;
     height: 50px;
   }
+  .projects-mobile {
+    right: -2rem;
+    top: 3rem;
+  }
+  .my-skills-mobile {
+    left: 11.5rem;
+    top: 6rem;
+  }
+  .about-mobile {
+    left: 21rem;
+  }
+  .contact-mobile {
+    left: 28rem;
+    top: 12.5rem;
+  }
+  .toggle {
+    left: 35rem;
+  }
+}
+@media (max-width: 768px) {
   .projects-mobile {
     right: 7rem;
     top: 3rem;
@@ -716,20 +776,42 @@ footer {
     left: 19rem;
     top: 12.5rem;
   }
+
   .toggle {
     left: 20rem;
   }
-}
-@media (max-width: 768px) {
+
+  .my-name {
+    left: 6rem;
+  }
+
   .menu {
     left: 42rem;
   }
+  .please-contact {
+    width: 37.5rem;
+  }
+  .description,
+  .skills,
+  .my-projects {
+    width: 37.25rem;
+    left: 4rem;
+  }
+  .my-project-header {
+    left: 16rem;
+  }
 }
-/*tablet version*/
 /*phone version*/
 @media (max-width: 430px) {
   .description {
     font-size: 1.3rem;
+  }
+  .my-project-header {
+    left: 1rem;
+  }
+
+  .my-name {
+    left: 1rem;
   }
   .name,
   .email,

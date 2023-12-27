@@ -33,11 +33,6 @@ toggle.addEventListener("change", () => {
   }
 });
 
-function setTheme(property, value) {
-  root_theme.style.setProperty(property, value);
-}
-setTheme();
-
 menuImage.addEventListener("click", () => {
   let closeMenu =
     "https://github.com/Florin12er/Portofolio-website/blob/main/images/menu-close.png?raw=true";
@@ -57,3 +52,22 @@ menuImage.addEventListener("click", () => {
     nav.style.height = "70px";
   }
 });
+function updateStyles() {
+  if (window.innerWidth >= 3840) {
+    nav.style.height = "70px";
+    header.style.opacity = "1";
+    footer.style.opacity = "1";
+    myProjectMobile.style.display = "none";
+  } else if (window.innerWidth >= 2560) {
+    nav.style.height = "70px";
+    header.style.opacity = "1";
+    footer.style.opacity = "1";
+    myProjectMobile.style.display = "none";
+  } else if (window.innerWidth >= 1920) {
+    nav.style.height = "70px";
+    header.style.opacity = "1";
+    footer.style.opacity = "1";
+    myProjectMobile.style.display = "none";
+  }
+}
+window.addEventListener("resize", updateStyles);

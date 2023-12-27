@@ -136,7 +136,7 @@
             <p class="please-contact hidden">I'm thrilled to connect with you! Whether you're reaching out about job opportunities, internships, or exciting freelance projects hidden, I'm all ears. Feel free to drop me a message using the form below or reach out through any of the platforms listed. Let's chat about how we can collaborate and create something amazing together.
                Looking forward to hearing from you!
             </p>
-            <form class="hidden">
+            <form class="hidden" id="form">
                <a href="https://github.com/Florin12er" class="logo-github">
                   <svg class="github-svg" viewBox="0 0 128 128">
                      <g>
@@ -159,9 +159,12 @@
                         13.75-32.617 13.72-2.094 0-4.188-.15-6.266-.446 12.008 9.433 25.98 14.441 40.254 14.422"></path>
                   </svg>
                </a>
-               <input type="text" class="name" placeholder="Name">
-               <input type="text" class="email" placeholder="email">
-               <textarea type="text" class="message" placeholder="Message"></textarea>
+               <label for="name"></label>
+               <input type="text" id="name" class="name" placeholder="Name" autocomplete="name">
+               <label for="email"></label>
+               <input type="text" class="email" placeholder="email" id="email" autocomplete="email">
+               <label for= "message"></label>
+               <textarea type="text" class="message" placeholder="Message" id="message" autocomplete="message"></textarea>
                <button class="send" type="submit">send</button>
             </form>
             <p class="copyright">© Copyright 2023, Florin Sebastian</p>
