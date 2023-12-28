@@ -468,6 +468,11 @@ header {
   }
 }
 @media (max-width: 1024px) {
+  .logo-twitter,
+  .logo-linkedin,
+  .logo-github {
+    width: 40px;
+  }
   footer {
     overflow-x: hidden;
   }

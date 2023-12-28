@@ -1,3 +1,6 @@
+import activateLinks from "./skillsLink.js";
+activateLinks();
+
 const hiddenElements = document.querySelectorAll(".hidden");
 const toggle = document.getElementById("switch");
 const menuImage = document.getElementById("menu");
