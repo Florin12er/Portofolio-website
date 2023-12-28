@@ -9,6 +9,14 @@
   transition: var(--transition-duration, all 10ms);
 }
 
+.correct {
+  position: relative;
+  left: 11rem;
+  bottom: 3.2rem;
+  width: 70px;
+  height: 42px;
+  font-weight: bold;
+}
 body {
   overflow-x: hidden;
   background-color: var(--body-color);
