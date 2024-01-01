@@ -773,7 +773,7 @@ header {
     left: 35rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .projects-mobile {
     right: 7rem;
     top: 3rem;
