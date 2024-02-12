@@ -1,4 +1,4 @@
-This is my personal website with all my projects
+This is my personal website with all my project
 
 
 
