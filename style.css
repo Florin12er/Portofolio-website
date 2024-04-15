@@ -83,8 +83,8 @@ label {
 .contacts {
   text-decoration: none;
   margin: 20px;
-  font-size: 2rem;
-  left: 120vh;
+  font-size: 1rem;
+  left: 100vh;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.5s ease;
 }
@@ -445,7 +445,7 @@ header {
   .projects,
   .contacts,
   .toggle {
-    left: 140vh;
+    left: 130vh;
   }
   .my-name {
     left: 40rem;

@@ -1,4 +1,4 @@
-kimport activateLinks from "./skillsLink.js";
+import activateLinks from "./skillsLink.js";
 import sendEmail from "./email.js";
 
 const send = document.getElementById("send");
