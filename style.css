@@ -484,6 +484,9 @@ header {
   }
 }
 @media (max-width: 1024px) {
+    .preview {
+margin-left: 40px;
+    }
   .logo-twitter,
   .logo-linkedin,
   .logo-github {
@@ -782,6 +785,10 @@ header {
   }
 }
 @media (max-width: 1023px) {
+    .preview {
+width: 500px;
+        height: 400px;
+    }
   .projects-mobile {
     right: 7rem;
     top: 3rem;
@@ -824,6 +831,9 @@ header {
 }
 /*phone version*/
 @media (max-width: 430px) {
+    .preview {
+        display: none;
+    }
   .description {
     font-size: 1.3rem;
   }
