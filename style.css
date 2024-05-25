@@ -201,11 +201,14 @@ p {
 }
 
 .my-projects {
-  height: 32rem;
+  height: 45rem;
   left: 15%;
   border: 2px solid var(--text-color);
   margin-top: 30rem;
   max-width: 70rem;
+}
+.preview {
+    margin-left: 150px;
 }
 
 #my-project-header {
@@ -262,6 +265,11 @@ form {
 .logo-linkedin,
 .logo-twitter {
   grid-column: 1;
+}
+.about-project {
+    p {
+        font-size: 2rem;
+    }
 }
 
 .email,
